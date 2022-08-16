@@ -2,47 +2,50 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <title>Кэт энерджи</title>
   </head>
   <body class="page__body">
 
 <!--Шапка-->
 
-    <header class="main-header header-navigation">
-      <a class="main-header-logo">
-        <img  src="images/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
-      </a>
-      <h1 class="name-of-comany header">
-        <strong>CAT</strong> ENERGY
-      </h1>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <img src="images/open-menu.svg" width="24" height="18" alt="Открыть меню">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper container">
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a class="main-page">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="product-catalog">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="program-selection">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<header class="main-header header-navigation">
+  <a class="main-header__logo">
+    <img  src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
+  </a>
+  <h1 class="main-header__header name-of-company">
+    <strong>CAT</strong> ENERGY
+  </h1>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <img src="img/open-menu.svg" width="24" height="18" alt="Открыть меню">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-nav__wrapper container">
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__menu">
+          <a class="main-page" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__menu">
+          <a class="product-catalog" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-nav__menu">
+          <a class="program-selection" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
     <main class="main-form-container">
-      <h2 class="program-selection">
+      <h2 class="program-selection-header">
         Подбор программы
       </h2>
 
@@ -53,24 +56,24 @@
       ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ
       ДЛЯ ВАШЕГО КОТА
     </h3>
-    <div class="name-form">
-      <p class="name-word">
+    <div class="name-form form-name-weight-age">
+      <p class="name-word word-form">
         ИМЯ:*
       </p>
       <form class="wright-name" method="post"  >
         <input class="wright-name__input" placeholder="БАРСИК" type="text" name="name-of-your-cat">
       </form>
     </div>
-    <div class="weight-form">
-      <p class="weight-form__word">
+    <div class="weight-form form-name-weight-age">
+      <p class="weight-form__word word-form">
         ВЕС(КГ):*
       </p>
       <form class="wright-weight" method="post">
         <input class="wright-weight__input" placeholder="7" type="number"  name="weight-of-your-cat">
       </form>
     </div>
-    <div class="age-form">
-      <p class="age-form__word">
+    <div class="age-form form-name-weight-age">
+      <p class="age-form__word word-form">
         ВОЗРАСТ(ЛЕТ):*
       </p>
       <form class="wright-age" method="post">
@@ -88,19 +91,19 @@
       <ul class="needs__list">
         <li class="needs__item">
           <label class="weight-lose">
-            <input class="visually-hidden control-input" type="radio" name="weight-lose" checked>
+            <input class="control-input" type="radio" name="weight-lose" checked>
           </label>
           <span class="needs-describtion">ПОХУДЕНИЕ</span>
         </li>
         <li class="needs__item">
           <label class="needs-weight-gain">
-            <input class="visually-hidden control-input" type="radio" name="weight-gain">
+            <input class="control-input" type="radio" name="weight-gain">
           </label>
           <span class="needs-describtion">НАБОР МАССЫ</span>
         </li>
         <li class="needs__item">
           <label class="unknown">
-            <input class="visually-hidden control-input" type="radio" name="unknown">
+            <input class="control-input" type="radio" name="unknown">
           </label>
           <span class="needs-describtion">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
         </li>
@@ -114,7 +117,7 @@
         Контактные данные (владельца кота)
       </h3>
       <div class="your-contacts__email">
-        <p class="your-contacts__email-word">
+        <p class="your-contacts__email-word word-form">
           E-MAIL:*
         </p>
         <form class="your-contacts__email-form" method="post">
@@ -122,7 +125,7 @@
         </form>
       </div>
       <div class="your-contacts__phone">
-        <p class="your-contacts__phone-word">
+        <p class="your-contacts__phone-word word-form">
           ТЕЛЕФОН:*
         </p>
         <form class="your-contacts__phone-form" method="post">
@@ -151,25 +154,25 @@
       <ul class="optional__list">
         <li class="optional__item">
           <label class="optional__label">
-            <input class="visually-hidden optional__control-input" type="radio" name="sweetener" checked>
+            <input class="optional__control-input" type="radio" name="sweetener" checked>
           </label>
           <span class="optional__describtion">САХАРОЗАМЕНИТЕЛЬ</span>
         </li>
         <li class="optional__item">
           <label class="optional__label">
-            <input class="visually-hidden optional__control-input" type="radio" name="water">
+            <input class="optional__control-input" type="radio" name="water">
           </label>
           <span class="optional__describtion">ПИТЬЕВАЯ ВОДА</span>
         </li>
         <li class="optional__item">
           <label class="optional__label">
-            <input class="visually-hidden optional__control-input" type="radio" name="milk">
+            <input class="optional__control-input" type="radio" name="milk">
           </label>
           <span class="optional__describtion">МОЛОКО</span>
         </li>
         <li class="optional__item">
           <label class="optional__label">
-            <input class="visually-hidden optional__control-input" type="radio" name="vitamins">
+            <input class="optional__control-input" type="radio" name="vitamins">
           </label>
           <span class="optional__describtion">ВИТАМИНЫ</span>
         </li>
@@ -182,19 +185,19 @@
 
 <!--Сотрудничество-->
 
-    <section class="partnership">
-      <h3 class="visually-hidden header">
-        Сотрудничество
-      </h3>
-      <p class="partnership__description">
-        ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЛЕРОВ!
-      </p>
-      <address>
-        ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </address>
-    </section>
+<section class="partnership">
+  <h3 class="visually-hidden header">
+    Сотрудничество
+  </h3>
+  <p class="partnership__description">
+    ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЛЕРОВ!
+  </p>
+  <address class="partnership__adress">
+    ул. Большая
+    Конюшенная, д. 19/8
+    Санкт-Петербург
+  </address>
+</section>
 
     <!--Карта-->
 
@@ -206,36 +209,36 @@
 
 <!--Подвал-->
 
-    <footer class="maiт-footer">
-      <h1 class="name-of-comany">
-        <strong>CAT</strong> ENERGY
-      </h1>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link social-link--vk">
-            <img src="images/vk.svg" width="27" height="17" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link social-link--youtube">
-            <img src="images/youtube.svg" width="24" height="19" alt="Ютуб">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link social-link--youtube">
-            <img src="images/telegramm.svg" width="19" height="17" alt="Телеграмм">
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer-copyright copyright">
-        <a class="copyright-link" href="https://up.htmlacademy.ru">
-          HTML Academy
-        </a>
-        <a class="html-academy-logo">
-          <img src="images/html-academy.svg" width="27" height="34" alt="ШТМЛ академия">
-        </a>
-      </div>
-    </footer>
+<footer class="main-footer">
+  <h1 class="main-footer__header name-of-company">
+    <strong>CAT</strong> ENERGY
+  </h1>
+  <ul class="main-footer__list social-list">
+    <li class="social-item">
+      <a class="social-link social-link--vk">
+        <img src="img/vk.svg" width="27" height="17" alt="Вконтакте">
+      </a>
+    </li>
+    <li class="social-item">
+      <a class="social-link social-link--youtube">
+        <img src="img/youtube.svg" width="24" height="19" alt="Ютуб">
+      </a>
+    </li>
+    <li class="social-item">
+      <a class="social-link social-link--youtube">
+        <img src="img/telegramm.svg" width="19" height="17" alt="Телеграмм">
+      </a>
+    </li>
+  </ul>
+  <div class="main-footer-copyright copyright">
+    <a class="copyright-link" href="https://up.htmlacademy.ru">
+      HTML Academy
+    </a>
+    <a class="html-academy-logo">
+      <img src="img/html-academy.svg" width="27" height="34" alt="ШТМЛ академия">
+    </a>
+  </div>
+</footer>
     </main>
   </body>
 </html>
