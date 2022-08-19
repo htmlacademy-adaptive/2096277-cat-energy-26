@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
@@ -218,27 +219,30 @@
 <!--Подвал-->
 
 <footer class="main-footer">
-  <h1 class="main-footer__header name-of-company">
+  <h1 class="visually-hidden">
     <strong>CAT</strong> ENERGY
   </h1>
+  <a class="main-footer__logo-text">
+    <img class="main-footer__logo-text-image" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+  </a>
   <ul class="main-footer__list social-list">
     <li class="social-item">
-      <a class="social-link social-link--vk">
+      <a class="main-footer__social-link social-link--vk">
         <img src="img/vk.svg" width="27" height="17" alt="Вконтакте">
       </a>
     </li>
     <li class="social-item">
-      <a class="social-link social-link--youtube">
+      <a class="main-footer__social-link social-link--youtube">
         <img src="img/youtube.svg" width="24" height="19" alt="Ютуб">
       </a>
     </li>
     <li class="social-item">
-      <a class="social-link social-link--youtube">
+      <a class="main-footer__social-link social-link--youtube">
         <img src="img/telegramm.svg" width="19" height="17" alt="Телеграмм">
       </a>
     </li>
   </ul>
-  <div class="main-footer-copyright copyright">
+  <div class=".main-footer__copyright-link copyright">
     <a class="copyright-link" href="https://up.htmlacademy.ru">
       HTML Academy
     </a>
