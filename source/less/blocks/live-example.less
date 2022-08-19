@@ -2,6 +2,18 @@
   width: 320px;
   height: 659px;
   background: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 800px;
+    margin-bottom: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    background: #eaeaea;
+    display: flex;
+  }
 }
 
 .live-example__header {
@@ -12,6 +24,13 @@
   line-height: 40px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    width: 325px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .live-example__description {
@@ -25,6 +44,13 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .result-container {
@@ -41,6 +67,11 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .weight-gain__result-description,
@@ -53,6 +84,11 @@
   align-items: center;
   text-align: center;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .food-price {
@@ -63,4 +99,16 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.live-example__image {
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }

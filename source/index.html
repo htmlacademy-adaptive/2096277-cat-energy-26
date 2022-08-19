@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
@@ -11,59 +12,61 @@
 
 <!--Шапка-->
 
-    <header class="main-header header-navigation">
-      <a class="main-header__logo">
-        <img  src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
-      </a>
-      <h1 class="main-header__header name-of-company">
-        <strong>CAT</strong> ENERGY
-      </h1>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <img src="img/open-menu.svg" width="24" height="18" alt="Открыть меню">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper container">
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__menu">
-              <a class="main-page">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__menu">
-              <a class="product-catalog" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__menu">
-              <a class="program-selection" href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<header class="main-header header-navigation">
+  <h1 class="visually-hidden">
+    <strong>CAT</strong> ENERGY
+  </h1>
+  <a class="main-header__logo">
+    <img  src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
+  </a>
+  <a class="main-header__logo-text">
+    <img class="main-header__logo-text__image" src="img/footer-logo.svg" width="101" height="18" alt="Cat Energy">
+    <source media="(min-width: 768px)" srcset="img/logo-desktop.svg" width="174" height="52">
+    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="60">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <img src="img/open-menu.svg" width="24" height="18" alt="Открыть меню">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-nav__wrapper container">
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__menu">
+          <a class="main-nav__menu__item main-page" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__menu">
+          <a class="main-nav__menu__item product-catalog" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-nav__menu__item main-nav__menu">
+          <a class="program-selection" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
     <main class="main-container">
 
       <!--Описание страницы-->
-      <div class="description-container">
-
       <section class="page-description description">
       <div class="page-description__container">
       <h2 class="description__cat-energy header">
         Функциональное питание для котов
       </h2>
-      <span class="description__you-and-cat">Занялся собой? Займись котом!</span>
+      <p class="description__you-and-cat">Занялся собой? Займись котом!</p>
       <img class="description__image" src="img/index-can-mobile.png" width="280" height="270" alt="Упаковка Кэт Энерджи">
       </div>
-      </section>
       <a class="button description__link" href="form.html">
         Подобрать программу
       </a>
-      </div>
+      </section>
 <!--Похудение-->
-
+    <div class="slimming-weight-gain">
     <section class="sliming">
       <div class="sliming__header-container">
       <img class="sliming__header-image" src="img/cat.svg" width="36" height="50" alt="Кошка">
@@ -100,7 +103,7 @@
           <img class="right-arrow" src="img/icon_arrow.svg" width="32" height="10" alt="стрелочка">
         </button>
     </section>
-
+    </div>
 <!--Описание продукта-->
 
     <section class="work-description">
@@ -109,25 +112,25 @@
       </h3>
       <ul class="work-description__list ">
         <li class="work-description__item helpful-substunces">
-          <img src="img/leaflet.svg" width="30" height="32" alt="листик">
+          <img class="work-description__image" src="img/leaflet.svg" width="30" height="32" alt="листик">
           <p class="helpful-substanses-description work-description__description">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
         <li class="work-description__item powder">
-          <img src="img/icon_tub.svg" width="29" height="31" alt="штучка">
+          <img class="work-description__image" src="img/icon_tub.svg" width="29" height="31" alt="штучка">
           <p class="powder-description work-description__description">
             Выпускается в виде порошка, который можно залить кипятком и готово.
           </p>
         </li>
         <li class="work-description__item replacement">
-          <img src="img/fork_and_knife.svg" width="25" height="30" alt="вилка и нож">
+          <img class="work-description__image" src="img/fork_and_knife.svg" width="25" height="30" alt="вилка и нож">
           <p class="replacement-description work-description__description">
             Замените один-два приема еды на наше функциональное питание.
           </p>
         </li>
         <li class="work-description__item best-chenge">
-          <img src="images/alarm.svg" width="32" height="33" alt="будильник">
+          <img class="work-description__image" src="img/alarm.svg" width="32" height="33" alt="будильник">
           <p class="best-chenge-description work-description__description">
             Уже через месяц наслаждайтесь изменением вашего питомца к лучшему.
           </p>
@@ -167,7 +170,7 @@
       <p class="food-price">
         ЗАТРАТЫ НА ПИТАНИЕ: 15000 РУБ.
       </p>
-      <img src="img/boris-before.png" width="280" height="232" alt="Борис до и после">
+      <img class="live-example__image" src="img/boris-before.png" width="280" height="232" alt="Борис до и после">
       <div class="weight-scale">
         <p class="weight-before">
           БЫЛО
@@ -205,9 +208,12 @@
 <!--Подвал-->
 
     <footer class="main-footer">
-      <h1 class="main-footer__header name-of-company">
+      <h1 class="visually-hidden">
         <strong>CAT</strong> ENERGY
       </h1>
+      <a class="main-footer__logo-text">
+        <img class="main-footer__logo-text__image" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+      </a>
       <ul class="main-footer__list social-list">
         <li class="social-item">
           <a class="social-link social-link--vk">

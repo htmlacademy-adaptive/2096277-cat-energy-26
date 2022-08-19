@@ -2,6 +2,22 @@
   width: 300px;
   height: 191px;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 236px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
+.your-contacts__email-phone-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    display: flex;
+  }
 }
 
 .your-contacts__header {
@@ -11,6 +27,11 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .your-contacts__email {
@@ -26,6 +47,11 @@
   height: 45px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: @tablet-width) {
+    width: 551px;
+    height: 52px;
+  }
 }
 
 .your-contacts__phone-input {
@@ -33,4 +59,9 @@
   height: 45px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: @tablet-width) {
+    width: 535px;
+    height: 52px;
+  }
 }

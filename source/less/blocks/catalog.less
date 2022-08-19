@@ -1,6 +1,16 @@
 .catalog {
   width: 320px;
   height: 1775px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 2500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    height: 1400px;
+  }
 }
 
 .catalog__header {
@@ -10,6 +20,13 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    width: 480px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .catalog__list {
@@ -19,4 +36,26 @@
   margin-left: auto;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+
+    :nth-child(1n) {
+      margin-right: auto;
+      margin-left: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+
+    :nth-child(1n) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }

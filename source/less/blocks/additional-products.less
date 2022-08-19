@@ -1,6 +1,19 @@
+.additional-gift-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 700px;
+    display: flex;
+  }
+}
+
 .additional-products {
   width: 320px;
   height: 560px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 700px;
+  }
 }
 
 .additional-products__header {
@@ -11,6 +24,13 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    width: 338px;
+    height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional-products__list {
@@ -22,11 +42,28 @@
   list-style-type: none;
   width: 280px;
   height: 519px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 556px;
+    background-color: #cdcdcd;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+    height: 288px;
+    background-color: #ffffff;
+  }
 }
 
 .additional-products__item {
   width: 280px;
   height: 98px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .additional-products__item-header {
@@ -40,6 +77,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__property {
@@ -53,6 +97,13 @@
   align-items: center;
   text-align: center;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 132px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__meaning {
@@ -66,8 +117,34 @@
   align-items: center;
   text-align: center;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 132px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-.additional-products_-price {
+.additional-products__price {
   display: flex;
+}
+
+.additional-products__button {
+  @media (min-height: @tablet-width) {
+    width: 192px;
+    height: 26px;
+    font-size: 16px;
+    padding: 7px 220px;
+  }
+
+  @media (min-height: @desktop-width) {
+    padding: 7px 26px;
+  }
+}
+
+.additional-products__item-wrapper {
+  @media (min-height: @tablet-width) {
+    display: flex;
+  }
 }
