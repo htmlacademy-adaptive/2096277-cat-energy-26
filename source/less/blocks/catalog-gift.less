@@ -4,12 +4,36 @@
   margin-left: auto;
   margin-right: auto;
   background-image: url("../img/catalog-background-image.jpg");
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+    height: 200px;
+    background-image: url("../img/tablet-background-additional.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/desktop-background-additional.png");
+  }
 }
 
 .catalog-gift__wrapper {
   width: 280px;
   height: 290px;
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+    height: 200px;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 289px;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
 }
 
 .catalog-gift__gift-image {

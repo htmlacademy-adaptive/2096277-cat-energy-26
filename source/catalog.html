@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
@@ -12,12 +13,17 @@
 <!--Шапка-->
 
 <header class="main-header header-navigation">
+  <h1 class="visually-hidden">
+    <strong>CAT</strong> ENERGY
+  </h1>
   <a class="main-header__logo">
     <img  src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
   </a>
-  <h1 class="main-header__header name-of-company">
-    <strong>CAT</strong> ENERGY
-  </h1>
+  <a class="main-header__logo-text">
+    <img class="main-header__logo-text__image" src="img/footer-logo.svg" width="101" height="18" alt="Cat Energy">
+    <source media="(min-width: 768px)" srcset="img/logo-desktop.svg" width="174" height="52">
+    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="60">
+  </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">
       <img src="img/open-menu.svg" width="24" height="18" alt="Открыть меню">
@@ -26,16 +32,16 @@
     <div class="main-nav__wrapper container">
       <ul class="main-nav__list site-list">
         <li class="main-nav__menu">
-          <a class="main-page">
+          <a class="main-nav__menu__item main-page" href="index.html">
             Главная
           </a>
         </li>
         <li class="main-nav__menu">
-          <a class="product-catalog" href="catalog.html">
+          <a class="main-nav__menu__item product-catalog" href="catalog.html">
             Каталог продукции
           </a>
         </li>
-        <li class="main-nav__menu">
+        <li class="main-nav__menu__item main-nav__menu">
           <a class="program-selection" href="form.html">
             Подбор программы
           </a>
@@ -47,14 +53,13 @@
     <main class="main-container">
 
 <!--КаталоГ-->
-
     <section class="catalog">
       <h2 class="catalog__header">
         Каталог продукции
       </h2>
       <ul class="catalog__list">
         <li class="product-card">
-          <img class="product-card__image" src="img/cat-energy-chiken.png" width="68" height="86" alt="Корм с курицей">
+          <img class="product-card__image product-card__image-small" src="img/cat-energy-chiken.png" width="68" height="86" alt="Корм с курицей">
           <h3 class="product-card__header">
             CAT ENERGY PRO 500Г
           </h3>
@@ -69,7 +74,7 @@
           <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="product-card">
-          <img class="product-card__image" src="img/cat-energy-chiken1000.png" width="84" height="100" alt="Корм с курицей большой">
+          <img class="product-card__image product-card__image-big" src="img/cat-energy-chiken1000.png" width="84" height="100" alt="Корм с курицей большой">
           <h3 class="product-card__header">
             CAT ENERGY PRO 1000Г
           </h3>
@@ -84,7 +89,7 @@
           <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="product-card">
-          <img class="product-card__image" src="img/cat-energy-fish.png" width="68" height="78" alt="Корм с рыбой">
+          <img class="product-card__image product-card__image-small" src="img/cat-energy-fish.png" width="68" height="78" alt="Корм с рыбой">
           <h3 class="product-card__header">
             CAT ENERGY PRO 500Г
           </h3>
@@ -99,7 +104,7 @@
           <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="product-card">
-          <img class="product-card__image" src="img/cat-energy-fish1000.png" width="84" height="100" alt="Корм с рыбой большой">
+          <img class="product-card__image product-card__image-big" src="img/cat-energy-fish1000.png" width="84" height="100" alt="Корм с рыбой большой">
           <h3 class="product-card__header">
             CAT ENERGY PRO 1000Г
           </h3>
@@ -114,7 +119,7 @@
           <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="product-card">
-          <img class="product-card__image" src="img/cat-energy-grechca.png" width="68" height="78" alt="Корм с гречкой">
+          <img class="product-card__image product-card__image-small" src="img/cat-energy-grechca.png" width="68" height="78" alt="Корм с гречкой">
           <h3 class="product-card__header">
             CAT ENERGY SLIM 500Г
           </h3>
@@ -129,7 +134,7 @@
           <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="product-card">
-          <img class="product-card__image" src="img/cat-energy-grechca1000.png" width="84" height="100" alt="Корм с гречкой большой">
+          <img class="product-card__image product-card__image-big" src="img/cat-energy-grechca1000.png" width="84" height="100" alt="Корм с гречкой большой">
           <h3 class="product-card__header">
             CAT ENERGY SLIM 1000Г
           </h3>
@@ -144,7 +149,7 @@
           <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="product-card">
-          <img class="product-card__image" src="img/cat-energy-rise.png" width="72" height="84" alt="Корм с рисом">
+          <img class="product-card__image product-card__image-small" src="img/cat-energy-rise.png" width="72" height="84" alt="Корм с рисом">
           <h3 class="product-card__header">
             CAT ENERGY SLIM 500Г
           </h3>
@@ -158,8 +163,8 @@
           </div>
           <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
-      </ul>
-      <div class="show-more">
+        <li class="show-more-card">
+          <div class="show-more">
         <h3 class="show-more__header">
           ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ
         </h3>
@@ -168,26 +173,30 @@
         </p>
         <button class="button show-more__button" type="button">ПОКАЗАТЬ ВСЕ</button>
       </div>
+        </li>
+      </ul>
     </section>
-
 <!--Дополнительные товары-->
-
+    <div class="additional-gift-wrapper">
     <section class="additional-products">
       <h2 class="additional-products__header">
         Дополнительные товары
       </h2>
       <ul class="additional-products__list">
         <li class="additional-products__item">
+          <div class="additional-products__item-wrapper">
           <h3 class="additional-products__item-header">
             САХАРОЗАМЕНИТЕЛЬ
           </h3>
-          <div class="additional-products_-price">
+          <div class="additional-products__price">
           <span class="additional-products__property">1 упаковка (100 г)</span>
           <span class="additional-products__meaning">200 Р.</span>
           </div>
-          <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
+          </div>
+          <button class="additional-products__button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="additional-products__item">
+          <div class="additional-products__item-wrapper">
           <h3 class="additional-products__item-header">
             ПИТЕВАЯ ВОДА
           </h3>
@@ -195,27 +204,32 @@
           <span class="additional-products__property">5 литров</span>
           <span class="additional-products__meaning">50 Р.</span>
           </div>
-          <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
+          </div>
+          <button class="additional-products__button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="additional-products__item">
+          <div class="additional-products__item-wrapper">
           <h3 class="additional-products__item-header">
             МОЛОКО
           </h3>
-          <div class="additional-products_-price">
+          <div class="additional-products__price">
           <span class="additional-products__property">1 литр</span>
           <span class="additional-products__meaning">100 Р.</span>
           </div>
-          <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
+          </div>
+          <button class="additional-products__button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="additional-products__item">
+          <div class="additional-products__item-wrapper">
           <h3 class="additional-products__item-header">
             ВИТАМИНЫ
           </h3>
-          <div class="additional-products_-price">
+          <div class="additional-products__price">
           <span class="additional-products__property">1 упаковка (30г)</span>
           <span class="additional-products__meaning">300 Р.</span>
           </div>
-          <button class="button order-button" type="button">ЗАКАЗАТЬ</button>
+          </div>
+          <button class="additional-products__button order-button" type="button">ЗАКАЗАТЬ</button>
         </li>
       </ul>
     </section>
@@ -233,7 +247,7 @@
       </p>
       </div>
     </section>
-
+  </div>
 <!--Сотрудничество-->
 
 <section class="partnership catalog__partership">
@@ -261,27 +275,30 @@
     <!--Подвал-->
 
     <footer class="main-footer">
-      <h1 class="main-footer__header name-of-company">
+      <h1 class="visually-hidden">
         <strong>CAT</strong> ENERGY
       </h1>
+      <a class="main-footer__logo-text">
+        <img class="main-footer__logo-text-image" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+      </a>
       <ul class="main-footer__list social-list">
         <li class="social-item">
-          <a class="social-link social-link--vk">
+          <a class="main-footer__social-link social-link--vk">
             <img src="img/vk.svg" width="27" height="17" alt="Вконтакте">
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link social-link--youtube">
+          <a class="main-footer__social-link social-link--youtube">
             <img src="img/youtube.svg" width="24" height="19" alt="Ютуб">
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link social-link--youtube">
+          <a class="main-footer__social-link social-link--youtube">
             <img src="img/telegramm.svg" width="19" height="17" alt="Телеграмм">
           </a>
         </li>
       </ul>
-      <div class="main-footer-copyright copyright">
+      <div class=".main-footer__copyright-link copyright">
         <a class="copyright-link" href="https://up.htmlacademy.ru">
           HTML Academy
         </a>

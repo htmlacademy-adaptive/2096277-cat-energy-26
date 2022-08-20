@@ -1,9 +1,29 @@
+.form-needs-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 600px;
+    display: flex;
+  }
+}
+
 .program-selection-header {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: @color-black;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 432px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.form-name-weight-age {
+  width: 280px;
+  display: flex;
 }
 
 .form-description__header {
@@ -14,44 +34,50 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: @color-black;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.form-name-weight-age {
+.word-form {
   display: flex;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: @color-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .name-word {
   margin-top: 52px;
 }
 
-.wright-name__input {
-  width: 229px;
-  height: 45px;
+.name-form__input {
+  height: 46px;
   margin-top: 39px;
-  box-sizing: border-box;
   border: 1px solid #e7e7e7;
-}
+  flex: 2;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-dark-grey;
 
-.wright-weight__input {
-  width: 204px;
-  height: 45px;
-  margin-top: 14px;
-  box-sizing: border-box;
-  border: 1px solid #e7e7e7;
-}
-
-.wright-age__input {
-  width: 172px;
-  height: 45px;
-  margin-top: 14px;
-  box-sizing: border-box;
-  border: 1px solid #e7e7e7;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

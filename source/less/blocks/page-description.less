@@ -1,11 +1,32 @@
 .page-description {
   width: 320px;
-  height: 302px;
+  height: 480px;
   background-image: url("../img/index-background-image.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 800px;
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    background-image: none;
+  }
 }
 
 .page-description__container {
+  width: 320px;
+  height: 302px;
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 500px;
+    background-color: none;
+  }
 }
 
 .description__cat-energy {
@@ -21,6 +42,14 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: @color-black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .description__you-and-cat {
@@ -28,6 +57,8 @@
   height: 14px;
   font-weight: 400;
   margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 25px;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -35,24 +66,47 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @color-black;
+  }
 }
 
 .description__image {
   display: block;
   margin-top: 29px;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   height: 270px;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 554px;
+    height: 499px;
+  }
 }
 
 .description__link {
   align-items: center;
   position: absolute;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 138px;
+  margin-left: 20px;
+  margin-right: auto;
   text-decoration: none;
-  width: 280px;
-  height: 40px;
-  background: #68b738;
+  width: 192px;
+  height: 26px;
+  padding: 7px 44px;
+  background: @background-color;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -60,12 +114,4 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
-
-.description-container {
-  width: 320px;
-  height: 480px;
-}
-
