@@ -8,7 +8,7 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body">
+  <body class="page-body">
 
 <!--Шапка-->
 
@@ -16,33 +16,32 @@
   <h1 class="visually-hidden">
     <strong>CAT</strong> ENERGY
   </h1>
-  <a class="main-header__logo">
-    <img  src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
-  </a>
+  <div class="main-header__container-logo">
   <a class="main-header__logo-text">
     <img class="main-header__logo-text__image" src="img/footer-logo.svg" width="101" height="18" alt="Cat Energy">
-    <source media="(min-width: 768px)" srcset="img/logo-desktop.svg" width="174" height="52">
-    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="60">
+    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+    <img  class="main-header__logo"src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
   </a>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--nojs main-nav--opened main-nav--closed">
     <button class="main-nav__toggle" type="button">
-      <img src="img/open-menu.svg" width="24" height="18" alt="Открыть меню">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <div class="main-nav__wrapper container">
+  </div>
+    <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="main-nav__menu">
-          <a class="main-nav__menu__item main-page" href="index.html">
+          <a class="main-nav__menu__item" href="index.html">
             Главная
           </a>
         </li>
         <li class="main-nav__menu">
-          <a class="main-nav__menu__item product-catalog" href="catalog.html">
+          <a class="main-nav__menu__item" href="catalog.html">
             Каталог продукции
           </a>
         </li>
-        <li class="main-nav__menu__item main-nav__menu">
-          <a class="program-selection" href="form.html">
+        <li class="main-nav__menu">
+          <a class="main-nav__menu__item" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -54,16 +53,18 @@
 
       <!--Описание страницы-->
       <section class="page-description description">
-      <div class="page-description__container">
-      <h2 class="description__cat-energy header">
-        Функциональное питание для котов
-      </h2>
-      <p class="description__you-and-cat">Занялся собой? Займись котом!</p>
-      <img class="description__image" src="img/index-can-mobile.png" width="280" height="270" alt="Упаковка Кэт Энерджи">
-      </div>
-      <a class="button description__link" href="form.html">
+      <div class="page-description__wrapper">
+        <div class="page-description__container">
+        <h2 class="description__cat-energy header">
+          Функциональное питание для котов
+        </h2>
+        <p class="description__you-and-cat">Занялся собой? Займись котом!</p>
+        <img class="description__image" src="img/index-can-mobile.png" width="280" height="270" alt="Упаковка Кэт Энерджи">
+        </div>
+        <a class="button description__link" href="form.html">
         Подобрать программу
       </a>
+      </div>
       </section>
 <!--Похудение-->
     <div class="slimming-weight-gain">
@@ -241,5 +242,7 @@
       </div>
     </footer>
     </main>
+
+    <script src="./js/nav.js"></script>
   </body>
 </html>
