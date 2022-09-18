@@ -1,0 +1,220 @@
+@import "variables.scss";
+
+.catalog-additional {
+  position: relative;
+  margin: 0;
+  padding: 24px 0 35px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $base-green;
+  }
+}
+
+.catalog-additional__wrapper {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+}
+
+.catalog-additional__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0 22px;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ffffff;
+  transform: translateX(-22px);
+}
+
+.catalog-additional__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-additional__item {
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom: 1px solid $medium-grey;
+
+  &:first-child {
+    border-top: 1px solid $medium-grey;
+  }
+}
+
+.catalog-additional__gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 35px;
+  padding: 59px 0 43px 0;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+    url("../img/catalog/catalog-gift-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+      url("../img/catalog/catalog-gift-background-mobile@2x.jpg");
+  }
+}
+
+.catalog-additional__gift-icon {
+  margin-bottom: 48px;
+}
+
+.catalog-additional__gift-text {
+  display: block;
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-additional {
+    padding-top: 69px;
+    padding-bottom: 76px;
+
+    &::before {
+      top: 89px;
+    }
+  }
+
+  .catalog-additional__container {
+    padding-top: 45px;
+  }
+
+  .catalog-additional__list {
+    margin-bottom: 70px;
+  }
+
+  .catalog-additional__item {
+    padding: 0 38px;
+    border: 1px solid $medium-grey;
+  }
+
+  .catalog-additional__wrapper {
+    width: $tablet-wrapper;
+  }
+
+  .catalog-additional__title {
+    padding: 0 36px;
+    font-size: 36px;
+    line-height: 36px;
+    transform: translateX(0);
+  }
+
+  .catalog-additional__gift {
+    width: $tablet-wrapper;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 117px 58px 79px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+      url("../img/catalog/catalog-gift-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+        url("../img/catalog/catalog-gift-background-tablet@2x.jpg");
+    }
+  }
+
+  .catalog-additional__gift-text {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog-additional__gift-icon {
+    width: 80px;
+    height: 82px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-additional {
+    padding-top: 76px;
+    padding-bottom: 82px;
+
+    &::before {
+      top: 99px;
+    }
+  }
+
+  .catalog-additional__wrapper {
+    width: $desktop-wrapper;
+  }
+
+  .catalog-additional__title {
+    padding: 0 40px 0 40px;
+    transform: translateX(-40px);
+  }
+
+  .catalog-additional__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .catalog-additional__list {
+    flex-grow: 1;
+    margin-right: 79px;
+    margin-bottom: 0;
+  }
+
+  .catalog-additional__item {
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid $medium-grey;
+  }
+
+  .catalog-additional__gift {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+    padding: 59px 40px 43px 43px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+      url("../img/catalog/catalog-gift-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+        url("../img/catalog/catalog-gift-background-desktop@2x.jpg");
+    }
+  }
+
+  .catalog-additional__gift-text {
+    width: 162px;
+    text-align: center;
+  }
+
+  .catalog-additional__gift-icon {
+    margin-bottom: 47px;
+  }
+}

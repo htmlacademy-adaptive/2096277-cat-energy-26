@@ -1,5 +1,6 @@
 .main-header {
   display: flex;
+  flex-direction: row;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -13,6 +14,25 @@
 .main-header__logo {
   margin-top: 10px;
   margin-left: 10px;
+  width: 33px;
+  height: 37px;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+    background-image: url("img/logo-tablet.svg");
+    text-align: start;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    height: 59px;
+    background-image: url("img/logo-desktop.svg");
+    text-align: start;
+    background-repeat: no-repeat;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -24,6 +44,10 @@
 }
 
 .main-header__logo-text__image {
+  text-align: center;
+  width: 101px;
+  height: 18px;
+
   &:hover {
     opacity: 0.8;
   }

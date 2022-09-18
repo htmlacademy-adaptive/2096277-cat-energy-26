@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.main-container {
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container__header {
+    margin-bottom: -32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__header {
+    margin-bottom: -50px;
+  }
+}
