@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+.contacts {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $mobile-wrapper;
+  padding: 26px 0;
+}
+
+.contacts__title {
+  display: block;
+  box-sizing: border-box;
+  width: 139px;
+  margin: 0;
+  padding: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__text {
+  display: block;
+  box-sizing: border-box;
+  width: 139px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: $tablet-wrapper;
+    padding: 58px 40px 56px 40px;
+  }
+
+  .contacts__title {
+    padding-top: 5px;
+    width: 175px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__text {
+    padding-top: 0;
+    width: 160px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__text-city {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 565px;
+    padding: 59px 76px 59px 79px;
+    background-color: #ffffff;
+  }
+
+  .contacts__text {
+    text-align: left;
+  }
+
+  .contacts__text-city {
+    margin-top: 18px;
+  }
+}
