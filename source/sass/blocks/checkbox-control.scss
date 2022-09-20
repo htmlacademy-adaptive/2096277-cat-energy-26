@@ -1,0 +1,63 @@
+@import "variables.scss";
+
+.checkbox-control {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.checkbox-control__mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $medium-grey;
+  transform: translateY(-50%);
+
+  .checkbox-control__input:checked + &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/tick.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  .checkbox-control__input:focus + & {
+    border: 1px solid $dark-grey;
+  }
+}
+
+.checkbox-control__label {
+  display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-control {
+    padding-left: 59px;
+  }
+
+  .checkbox-control__mark {
+    width: 40px;
+    height: 40px;
+  }
+}
