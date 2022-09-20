@@ -1,0 +1,94 @@
+@import "variables.scss";
+
+.image-slider {
+  position: relative;
+  display: block;
+  width: $mobile-wrapper;
+  height: 256px;
+  padding: 0;
+  text-align: center;
+}
+
+.image-slider__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+
+
+  &--before {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  }
+
+  &--after {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+}
+
+.image-slider__button {
+  position: absolute;
+  top: 50%;
+  left: 140px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  color: $medium-dark-grey;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translateX(-50%) translateY(-50%);
+
+  &:hover {
+    color: $base-green;
+  }
+
+  &:active {
+    color: rgba(94, 170, 47, 0.6);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -107px;
+    left: 18px;
+    display: block;
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    background-color: $medium-dark-grey;
+  }
+
+  &:hover::before {
+    background-color: $base-green;
+  }
+
+  &:active::before {
+    background-color: $base-green;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .image-slider {
+    width: 560px;
+    height: 512px;
+  }
+
+  .image-slider__button {
+    left: 280px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) translateY(5px);
+
+    &::before {
+      top: -237px;
+      height: 512px;
+    }
+  }
+}
