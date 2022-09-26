@@ -1,0 +1,55 @@
+@import "variables.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: $base-green;
+  border: none;
+
+  &:hover {
+    background-color: $darker-green;
+  }
+
+  &:active {
+    background-color: $darker-green;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
+
+  &--secondary {
+    background-color: $base-grey;
+    color: #444444;
+  }
+
+  &--secondary:hover {
+    background-color: $base-grey2;
+  }
+
+  &--secondary:active {
+    background-color: $base-grey2;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
